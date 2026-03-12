@@ -93,8 +93,8 @@ jobs:
         run: |
           pretty=$(jq . data.json)
           rm data.json
-          mkdir -p ./docs/_compatibility/meshery-kuma
-          cd ./docs/_compatibility/meshery-kuma
+          mkdir -p ./docs/content/en/project/compatibility/meshery-kuma
+          cd ./docs/content/en/project/compatibility/meshery-kuma
           touch data.json
           echo $pretty > data.json
           cat data.json
